@@ -24,19 +24,19 @@ class DaftarSiswaController extends Controller
         return view('daftarsiswa', compact('mahasiswa'));
     }
 
-    public function show($daftarsiswa){
-        $mahasiswa = [
-            ['nama' => 'Ari', 'kelas' => '6A'],
-            ['nama' => 'Budi', 'kelas' => '6B'],
-            ['nama' => 'Cinta', 'kelas' => '6C'],
-            ['nama' => 'Dody', 'kelas' => '6D'],
-        ];
+    // public function show($daftarsiswa){
+    //     $mahasiswa = [
+    //         ['nama' => 'Ari', 'kelas' => '6A'],
+    //         ['nama' => 'Budi', 'kelas' => '6B'],
+    //         ['nama' => 'Cinta', 'kelas' => '6C'],
+    //         ['nama' => 'Dody', 'kelas' => '6D'],
+    //     ];
 
-        if($daftarsiswa){
-            $mahasiswa = array_filter($mahasiswa, function($kelas){
-                return $kelas['kelas'] == request()->segment(count(request()->segments()));
-            });
-        }
-        return view('daftarsiswa', compact('mahasiswa'));
-    }
+    //     if($daftarsiswa){
+    //         $mahasiswa = array_filter($mahasiswa, function($kelas){
+    //             return $kelas['kelas'] == request()->segment(count(request()->segments()));
+    //         });
+    //     }
+    //     return view('daftarsiswa', compact('mahasiswa'));
+    // }
 }
