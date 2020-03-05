@@ -26,10 +26,10 @@ class DaftarSiswaController extends Controller
 
     public function show($daftarsiswa){
         $mahasiswa = [
-            ['nama' => 'Orang1', 'kelas' => '6A'],
-            ['nama' => 'Orang2', 'kelas' => '6B'],
-            ['nama' => 'Orang3', 'kelas' => '6C'],
-            ['nama' => 'Orang4', 'kelas' => '6D'],
+            ['nama' => 'Ari', 'kelas' => '6A'],
+            ['nama' => 'Budi', 'kelas' => '6B'],
+            ['nama' => 'Cinta', 'kelas' => '6C'],
+            ['nama' => 'Dody', 'kelas' => '6D'],
         ];
 
         if($daftarsiswa){
